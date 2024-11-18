@@ -1,0 +1,76 @@
+/* Contenedor principal */
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #f4f4f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px; 
+  color: #333; 
+  font-size: 32px; 
+  font-weight: bold; 
+}
+
+/* Estilo del formulario */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Estilo de los inputs */
+.input {
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9em;
+  transition: border-color 0.2s;
+  background-color: white;
+}
+
+.input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* Estilo de los selectores */
+select.input {
+  background-color: #fff;
+}
+
+/* Estilo del botón */
+.button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background-color: #387478;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #629584;
+}
+
+/* Mensaje de respuesta */
+.message {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #28a745;
+}
+
+.message.error {
+  color: #dc3545;
+}

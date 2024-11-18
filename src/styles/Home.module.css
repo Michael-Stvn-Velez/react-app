@@ -1,0 +1,77 @@
+/* src/styles/Home.module.css */
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  align-items: center;
+}
+
+.h2 {
+  text-align: center;
+  margin: 48px;
+  color: #E2F1E7;
+  font-size: 54px; 
+  font-weight: bold; 
+}
+
+p {
+  text-align: center;
+  margin: 12px;
+  color: #E2F1E7;
+  font-size: 24px; 
+  font-weight: 100; 
+}
+
+.cardContainer {
+  margin-top: 36px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.card {
+  --background: linear-gradient(to left, #243642 0%, #387478 100%);
+  width: 220px;
+  height: 270px;
+  padding: 5px;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: var(--background);
+  position: relative;
+  z-index: 1;
+  margin: 30px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+/* Contenido siempre visible */
+.alwaysVisible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.hoverContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 99%;
+  background-color: #181818; /* Fondo completamente opaco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+  opacity: 0; /* Ocultar por defecto */
+  transition: opacity 0.5s ease; /* Transición suave */
+}
+
+/* Mostrar contenido en hover */
+.card:hover .hoverContent {
+  opacity: 1; /* Mostrar el contenido en hover */
+}

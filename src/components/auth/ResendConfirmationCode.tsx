@@ -1,6 +1,5 @@
-// src/components/ResendConfirmationCode.tsx
 import React, { useState } from "react";
-import { resendConfirmationCode } from "../services/authService";
+import { resendConfirmationCode } from "../../services/authService";
 
 const ResendConfirmationCode: React.FC = () => {
   const [email, setEmail] = useState("");
