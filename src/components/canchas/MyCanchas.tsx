@@ -61,13 +61,6 @@ const MyCanchas: React.FC = () => {
               <p className={styles.info}><strong>Ubicación:</strong> {cancha.location}</p>
               <p className={styles.info}><strong>Tipo:</strong> {cancha.tipo}</p>
               <p className={styles.info}><strong>Contacto:</strong> {cancha.numeroContacto}</p>
-              {cancha.foto && (
-                <img
-                  src="https://www.istockphoto.com/resources/images/PhotoFTLP/P1-regional-iStock-1985150440.jpg"
-                  alt={`Foto de ${cancha.name}`}
-                  className={styles.image}
-                />
-              )}
               <div className={styles.buttonContainer}>
                 <button onClick={() => handleEdit(cancha._id)} className={styles.editButton}>Editar</button>
                 <button onClick={() => handleDelete(cancha._id)} className={styles.deleteButton}>Eliminar</button>
