@@ -51,13 +51,6 @@ const Explore: React.FC = () => {
               <p className={styles.p}><strong>Contacto:</strong> {cancha.numeroContacto}</p>
               <div className={styles.containerFoto}>
                 <a href={cancha.rutaGoogleMaps}>Como llegar</a>
-                {cancha.foto && (
-                  <img
-                    src={`https://www.istockphoto.com/resources/images/PhotoFTLP/P1-regional-iStock-1985150440.jpg`}
-                    alt={`Foto de ${cancha.name}`}
-                    className={styles.image}
-                  />
-                )}
               </div>
               
             </li>
